@@ -1,0 +1,123 @@
+:root {
+  --bg: #f3f4f6;
+  --card: #ffffff;
+  --text: #111827;
+  --muted: #6b7280;
+  --primary: #2563eb;
+  --secondary: #e5e7eb;
+  --danger: #dc2626;
+  --border: #d1d5db;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+button,
+input {
+  font: inherit;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+}
+
+.card {
+  width: 100%;
+  max-width: 420px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+}
+
+h1 {
+  margin: 0 0 18px;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.login-card h1,
+.welcome-card h1 {
+  color: #1d4ed8;
+}
+
+.label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #111827;
+}
+
+input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  margin-bottom: 18px;
+}
+
+.button-row {
+  display: flex;
+  gap: 12px;
+}
+
+button {
+  border: none;
+  border-radius: 8px;
+  padding: 12px 16px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: opacity 0.2s ease;
+}
+
+button:hover {
+  opacity: 0.95;
+}
+
+.primary-btn {
+  background: var(--primary);
+  color: white;
+  flex: 1;
+}
+
+.secondary-btn,
+.logout-btn {
+  background: var(--secondary);
+  color: var(--text);
+  flex: 1;
+}
+
+.welcome-card {
+  text-align: center;
+}
+
+.read-only {
+  margin: 20px 0;
+  font-size: 1.1rem;
+  color: var(--muted);
+}
+
+.danger-btn {
+  background: var(--danger);
+  color: white;
+  margin: 12px auto 18px;
+  display: inline-block;
+}
+
+.logout-btn {
+  display: inline-block;
+  margin-top: 12px;
+}
